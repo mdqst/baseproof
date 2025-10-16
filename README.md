@@ -16,3 +16,4 @@ This template uses **WalletConnect v2 (EthereumProvider)** directly + **ethers v
 
 ## Contract address
 - `src/components/NativeMint.tsx` → `CONTRACT_ADDRESS`
+test
