@@ -7,20 +7,20 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@thirdweb-dev/react": "^4.7.0",
-    "@thirdweb-dev/sdk": "^4.7.0",
-    "react-qr-code": "^2.0.6",
-    "@reown/appkit": "^1.0.0"
+"dependencies": {
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "@thirdweb-dev/react": "^5.0.0",
+  "@thirdweb-dev/sdk": "^5.0.0",
+  "react-qr-code": "^2.0.6",
+  "@reown/appkit": "^1.0.0"
   },
-  "devDependencies": {
-    "vite": "^5.0.0",
-    "@vitejs/plugin-react": "^4.0.0",
-    "typescript": "^5.0.0",
-    "tailwindcss": "^3.4.0",
-    "postcss": "^8.4.0",
-    "autoprefixer": "^10.4.0"
+"devDependencies": {
+  "vite": "^5.0.0",
+  "@vitejs/plugin-react": "^4.0.0",
+  "typescript": "^5.0.0",
+  "tailwindcss": "^3.4.0",
+  "postcss": "^8.4.0",
+  "autoprefixer": "^10.4.0"
   }
 }
