@@ -1,22 +1,12 @@
-# BaseProof (Thirdweb v5 + Vite)
+# BaseProof — Reown Only + Native Mint (ethers v6)
 
-Fully working minimal dApp:
-- Connect wallet (Thirdweb React v5 `ConnectButton`)
-- Mint ERC-721 NFT on Base Sepolia
-- View owned NFTs on /profile
+Pure Reown (WalletConnect) + ethers.js mint on Base Sepolia.
+Contract address is hardcoded in `NativeMint.tsx` (change if needed).
 
-> Reown: once your deploy works, you can swap the ConnectButton to Reown AppKit. This template guarantees a successful Vercel build first.
+## Env vars
+- `VITE_REOWN_PROJECT_ID` (from https://cloud.reown.com)
 
-## Env Vars (Vercel → Settings → Environment Variables)
-- `VITE_THIRDWEB_CLIENT_ID` — create at https://thirdweb.com/dashboard (free)
-- `VITE_THIRDWEB_NFT_CONTRACT_ADDRESS` — your ERC-721 contract address on Base Sepolia
-
-## Build settings (Vercel)
+## Deploy (Vercel)
 - Framework: Vite
-- Build command: `npm run build`
-- Output dir: `dist`
-
-## SPA routing
-`vercel.json` already included with SPA rewrite.
-
-(rebuild trigger)
+- Build: npm run build
+- Output: dist
