@@ -1,0 +1,1 @@
+console.log('BaseProof project placeholder');
