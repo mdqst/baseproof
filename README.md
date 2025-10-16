@@ -18,3 +18,5 @@ Fully working minimal dApp:
 
 ## SPA routing
 `vercel.json` already included with SPA rewrite.
+
+(rebuild trigger)
