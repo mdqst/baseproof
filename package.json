@@ -10,8 +10,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@thirdweb-dev/react": "^5.28.0",
-    "@thirdweb-dev/sdk": "^5.28.0",
+    "thirdweb": "^5.13.2",
     "react-qr-code": "^2.0.6",
     "@reown/appkit": "^1.0.0"
   },
