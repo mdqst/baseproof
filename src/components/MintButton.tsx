@@ -3,7 +3,6 @@ import { useActiveAccount } from "thirdweb/react";
 import { getContract, createThirdwebClient, defineChain } from "thirdweb";
 import { mintTo } from "thirdweb/extensions/erc721";
 import { createAppKit } from "@reown/appkit/react";
-import { walletConnect } from "@reown/appkit/adapters/walletconnect";
 
 const CONTRACT_ADDRESS = import.meta.env.VITE_THIRDWEB_NFT_CONTRACT_ADDRESS!;
 const clientId = import.meta.env.VITE_THIRDWEB_CLIENT_ID!;
@@ -11,10 +10,14 @@ const reownId = import.meta.env.VITE_REOWN_PROJECT_ID!;
 const client = createThirdwebClient({ clientId });
 const baseSepolia = defineChain(84532);
 
+// ✅ инициализация Reown SDK (без отдельного адаптера)
 const appKit = createAppKit({
   projectId: reownId,
-  adapters: [walletConnect()],
   theme: "light",
+  features: {
+    analytics: true,
+    email: false,
+  },
 });
 
 export default function MintButton() {
@@ -47,6 +50,7 @@ export default function MintButton() {
 
   return (
     <div>
+      {/* ✅ Кнопка подключения Reown */}
       <appKit.ConnectButton />
       <button
         onClick={handleMint}
