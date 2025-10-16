@@ -1,12 +1,18 @@
-# BaseProof — Reown Only + Native Mint (ethers v6)
+# BaseProof — WalletConnect + Native Mint (Base Sepolia)
 
-Pure Reown (WalletConnect) + ethers.js mint on Base Sepolia.
-Contract address is hardcoded in `NativeMint.tsx` (change if needed).
+This template uses **WalletConnect v2 (EthereumProvider)** directly + **ethers v6**.
+- Connect wallet via QR/modal
+- Mint NFT by calling common `mint()` variants on your contract
+- Chain: Base Sepolia (84532)
+- Vercel-ready SPA
 
-## Env vars
-- `VITE_REOWN_PROJECT_ID` (from https://cloud.reown.com)
+## Env vars (Vercel → Settings → Environment Variables)
+- `VITE_REOWN_PROJECT_ID` — your Project ID from https://cloud.reown.com
 
-## Deploy (Vercel)
+## Build
 - Framework: Vite
-- Build: npm run build
-- Output: dist
+- Build: `npm run build`
+- Output: `dist`
+
+## Contract address
+- `src/components/NativeMint.tsx` → `CONTRACT_ADDRESS`
