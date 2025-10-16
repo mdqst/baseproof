@@ -13,7 +13,6 @@ export default function ConnectWallet() {
       setBusy(true); setError(null);
       const projectId = import.meta.env.VITE_REOWN_PROJECT_ID as string;
       const eip1193 = await initWalletConnect(projectId);
-      const accounts: string[] = await eip1193.request({ method: 'eth_requestAccounts' }) as any;
       const chainIdHex: string = await eip1193.request({ method: 'eth_chainId' }) as any;
       if (parseInt(chainIdHex, 16) !== BASE_SEPOLIA_ID) {
         try {
